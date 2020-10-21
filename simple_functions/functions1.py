@@ -9,6 +9,8 @@ def my_sum(iterable):
         tot += i
     return tot
 
-@lru_cache(maxsize=None)  # cache of previous results to avoid repetition. v 3.9 = @cache
+
+@lru_cache(maxsize=None)  # cache of previous results
 def factorial(n):
     return n * factorial(n-1) if n else 1
+    
